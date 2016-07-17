@@ -1,4 +1,4 @@
-package com.hulala.jmt.pc1;
+package com.hulala.jmt.pc1.pojo;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -33,7 +33,6 @@ public class BlockingQueue<T> {
      */
     public synchronized T poll() {
         if (queue.size() == 0) {
-            System.out.println("wait data");
             try {
                 this.wait();
             } catch (InterruptedException e) {

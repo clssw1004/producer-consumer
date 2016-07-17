@@ -1,5 +1,7 @@
 package com.hulala.jmt.pc1;
 
+import com.hulala.jmt.pc1.pojo.BlockingQueue;
+
 public class App {
 	public static void main(String[] args) {
 		final BlockingQueue<String> queue = new BlockingQueue<String>();
